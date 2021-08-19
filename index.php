@@ -14,6 +14,19 @@
     <div style="width: 50%; padding-top: 5%;" class="container">
       <?php require_once 'processing.php'; ?>
 
+      <?php 
+        if(isset($_SESSION['message'])):
+      ?>
+
+      <div class="alert alert-<?=$_SESSION['msg_type']?>">
+          <?php 
+            echo $_SESSION['message'];
+            unset($_SESSION['message']);
+          ?>
+      </div>
+      <?php
+        endif
+      ?>
       <?php
         $mysqli = mysqli_connect('localhost', 'root', 'root', 'lamplogin') or die(mysqli_connect_error($mysqli));
         $result = mysqli_query($mysqli, "SELECT * FROM data") or die($mysqli->error);
@@ -29,30 +42,24 @@
             </tr>
           </thead>
       <?php
-        // db results
-        // pretty($result);
         // db assoc array - looping to get all db entries
         while($row = $result->fetch_assoc()): 
       ?>
           <tr>
             <td><?php echo $row['email']; ?></td>
             <td><?php echo $row['username']; ?></td>
+            <td>
+              <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-info">Edit</a>
+              <a href="index.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a>
+            </td>
           </tr>
         <?php endwhile; ?>
         </table>
       </div>
-      <?php
-        // make output pretty
-        function pretty($array) {
-          echo '<pre>';
-          print_r($array);
-          echo '</pre>';
-        }
-      ?>
     </div>
 
     <div style="width: 50%; padding-top: 20%;" class="container">
-      <form action="" method="POST">
+      <form action="processing.php" method="POST">
         <div class="mb-3">
           <h1>LAMP Stack Register Form</h1>
           <label for="email" class="form-label">Email address</label>
