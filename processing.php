@@ -24,7 +24,7 @@ if (isset($_GET['delete'])){
     $_SESSION['message'] = "User has been deleted!";
     $_SESSION['msg_type'] = "danger";
 
-    header("location: index.php");
+    // header("location: index.php");
 }
 
 ?>

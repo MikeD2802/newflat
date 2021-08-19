@@ -49,8 +49,8 @@
             <td><?php echo $row['email']; ?></td>
             <td><?php echo $row['username']; ?></td>
             <td>
-              <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-info">Edit</a>
-              <a href="index.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a>
+              <a href="index.php?edit=<?php echo $row['id']; ?>" class="btn btn-outline-primary">Edit</a>
+              <a href="index.php?delete=<?php echo $row['id']; ?>" class="btn btn-outline-danger">Delete</a>
             </td>
           </tr>
         <?php endwhile; ?>
@@ -80,7 +80,7 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div> -->
-        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        <button type="submit" class="btn btn-outline-primary" name="submit">Submit</button>
       </form>
     </div>
   </body>
