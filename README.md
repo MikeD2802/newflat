@@ -5,13 +5,13 @@ Becoming familiar with the LAMP stack by building a simple website for creating 
 -Brian Moon
 
 ## Create User Account
-<img width="1159" alt="create" src="https://user-images.githubusercontent.com/25870426/130090245-dd0b7429-9db6-423b-a25d-7cd3b1642211.png">
+<img width="1162" alt="create" src="https://user-images.githubusercontent.com/25870426/130092052-6a6fb9ba-fe71-4e7f-b12d-ba52aeb04b22.png">
 
 ## Read User Account
-<img width="1159" alt="read" src="https://user-images.githubusercontent.com/25870426/130090290-83758ef7-08d1-40d3-96c3-8e37f13fbf29.png">
+<img width="1165" alt="read" src="https://user-images.githubusercontent.com/25870426/130092076-8fe95a17-beee-4451-a169-dbca5b6bbf1a.png">
 
 ## Update User Account
-<img width="1160" alt="update" src="https://user-images.githubusercontent.com/25870426/130090357-e14b2e8c-1688-4e6f-bdbd-ccf5bff836c3.png">
+<img width="1164" alt="update" src="https://user-images.githubusercontent.com/25870426/130092102-55202c37-66f9-42f9-b94b-246d864436c7.png">
 
 ## Delete User Account
-<img width="1160" alt="delete" src="https://user-images.githubusercontent.com/25870426/130090424-445c05ab-5c62-4320-bd47-97b54571cd89.png">
+<img width="1164" alt="delete" src="https://user-images.githubusercontent.com/25870426/130092130-a7b452e8-7ce8-466e-a106-c846f454aa1d.png">
